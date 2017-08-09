@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+ <title>Terbilang dengan javascript</title>
+ <script type="text/javascript" src="terbilang.js"></script>
+ <script type="text/javascript">
+ function ubah(nilai){
+ //memanggil fungsi terbilang() dari file terbilang.js
+ var hasil = terbilang(nilai);
+ var hasil_div= document.getElementById('hasil');
+ //masukkan hasil konversi ke dalam hasil_div
+ hasil_div.innerHTML = hasil;
+ }
+</script>
+</head>
+<body >
+Masukkan bilangan saja : <br />
+<input type=text id="nilai">
+<button value="ubah" onclick="ubah(document.getElementById('nilai').value)">tes</button>
+<div id="hasil" />
+</body>
+</html>
